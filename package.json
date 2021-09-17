@@ -1,6 +1,6 @@
 {
   "name": "@cheesebit/use-value",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A custom React hook that wraps the existing useState to be used similarly to jQuery's .val().",
   "main": "dist/use-value.cjs.js",
   "module": "dist/use-value.esm.js",
