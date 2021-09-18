@@ -1,3 +1,11 @@
+## [1.0.2](https://github.com/cheesebit/use-value/compare/v1.0.1...v1.0.2) (2021-09-18)
+
+
+### Bug Fixes
+
+* always return the current state from `value` ([13650ee](https://github.com/cheesebit/use-value/commit/13650ee8d7c7d08dbd7a4ae223bd3869c338c682))
+* temporarily skip coverall step on CI ([e2ec7e0](https://github.com/cheesebit/use-value/commit/e2ec7e08ffd57b2df7b29f69cc043269d43ca7c7))
+
 ## [1.0.1](https://github.com/cheesebit/use-value/compare/v1.0.0...v1.0.1) (2021-09-17)
 
 
