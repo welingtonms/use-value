@@ -5,7 +5,10 @@ name: Release
 
 on:
   push:
-    branches: [main]
+    branches: [main, beta]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 jobs:
   build:
@@ -13,7 +16,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x]
+        node-version: [16.x]
 
     steps:
       - uses: actions/checkout@v2
@@ -22,18 +25,19 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - name: Install dependencies
-        run: npm ci
-
+        run: yarn install --immutable # based on https://circleci.com/docs/2.0/yarn/
+      - name: Running unit tests
+        run: yarn test
       - name: Running code coverage
-        run: npm run coverage
-
-      # - name: Coveralls
-      #   uses: coverallsapp/github-action@master
-      #   with:
-      #     github-token: ${{ secrets.GITHUB_TOKEN }}
-
+        run: yarn coverage
+      - name: Coveralls
+        uses: coverallsapp/github-action@master
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Build
+        run: yarn build
       - name: Release
-        run: npm run release
+        run: yarn release || true
     env:
       GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
       NPM_TOKEN: ${{ secrets.NPM_TOKEN }}

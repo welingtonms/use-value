@@ -1,69 +1,69 @@
 {
-  "name": "@cheesebit/use-value",
-  "version": "1.0.2",
-  "description": "A custom React hook that wraps the existing useState to be used similarly to jQuery's .val().",
-  "main": "dist/use-value.cjs.js",
-  "module": "dist/use-value.esm.js",
-  "types": "dist",
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "test": "jest --watch",
-    "start": "npm run watch",
-    "coverage": "jest --coverage",
-    "watch": "rollup -c --watch",
-    "build": "rollup --config",
-    "postversion": "git push origin --tags",
-    "prepublishOnly": "npm run build",
-    "generate-types": "tsc --build tsconfig.json",
-    "release": "semantic-release"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/cheesebit/use-value.git"
-  },
-  "keywords": [
-    "use-value",
-    "useState",
-    "jQuery",
-    "value"
-  ],
-  "author": "Welington Silva",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/cheesebit/use-value/issues"
-  },
-  "homepage": "https://github.com/cheesebit/use-value#readme",
-  "devDependencies": {
-    "@babel/core": "7.15.0",
-    "@babel/preset-env": "7.15.0",
-    "@babel/preset-typescript": "7.15.0",
-    "@rollup/plugin-babel": "5.3.0",
-    "@rollup/plugin-commonjs": "20.0.0",
-    "@rollup/plugin-node-resolve": "13.0.4",
-    "@rollup/plugin-typescript": "8.2.5",
-    "@semantic-release/changelog": "5.0.1",
-    "@semantic-release/git": "9.0.0",
-    "@testing-library/react-hooks": "7.0.1",
-    "@types/jest": "^26.0.24",
-    "babel-jest": "^27.0.6",
-    "chance": "^1.1.7",
-    "jest": "27.0.6",
-    "react": "17.0.2",
-    "react-test-renderer": "17.0.2",
-    "rollup": "2.56.1",
-    "rollup-plugin-analyzer": "4.0.0",
-    "rollup-plugin-delete": "2.0.0",
-    "rollup-plugin-terser": "7.0.2",
-    "semantic-release": "19.0.3",
-    "tslib": "2.3.0",
-    "typescript": "4.3.5"
-  },
-  "peerDependencies": {
-    "react": ">= 17.0.1"
-  },
-  "publishConfig": {
-    "access": "public"
-  }
+	"name": "@welingtonms/use-value",
+	"version": "1.0.2",
+	"description": "A custom React hook to set/get state using a single function.",
+	"module": "dist/index.js",
+	"types": "dist",
+	"files": [
+		"dist"
+	],
+	"engines": {
+		"node": ">=16"
+	},
+	"scripts": {
+		"test": "jest",
+		"start": "npm run watch",
+		"coverage": "jest --coverage",
+		"watch": "rollup -c --watch",
+		"build": "rollup --config",
+		"generate-types": "tsc --build tsconfig.json",
+		"release": "semantic-release"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/welingtonms/use-value.git"
+	},
+	"keywords": [
+		"use-value",
+		"useState",
+		"jQuery",
+		"value"
+	],
+	"author": "Welington Silva",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/welingtonms/use-value/issues"
+	},
+	"homepage": "https://github.com/welingtonms/use-value#readme",
+	"devDependencies": {
+		"@babel/core": "7.18.5",
+		"@babel/preset-env": "7.18.2",
+		"@babel/preset-typescript": "7.17.12",
+		"@rollup/plugin-babel": "5.3.1",
+		"@rollup/plugin-node-resolve": "13.3.0",
+		"@rollup/plugin-typescript": "8.3.3",
+		"@semantic-release/changelog": "6.0.1",
+		"@semantic-release/git": "10.0.1",
+		"@testing-library/react-hooks": "8.0.1",
+		"@types/jest": "28.1.2",
+		"babel-jest": "28.1.1",
+		"chance": "1.1.8",
+		"jest": "28.1.1",
+		"prettier": "npm:wp-prettier@latest",
+		"react-test-renderer": "18.2.0",
+		"react": "17.0.2",
+		"rollup-plugin-analyzer": "4.0.0",
+		"rollup-plugin-delete": "2.0.0",
+		"rollup-plugin-terser": "7.0.2",
+		"rollup": "2.75.6",
+		"semantic-release": "19.0.3",
+		"tslib": "2.4.0",
+		"typescript": "4.7.4"
+	},
+	"peerDependencies": {
+		"react": ">= 17.0.1"
+	},
+	"publishConfig": {
+		"access": "public"
+	}
 }

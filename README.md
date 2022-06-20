@@ -2,14 +2,13 @@
 
 A custom React hook that wraps the existing useState to be used similarly to jQuery's [.val()](https://api.jquery.com/val/).
 
-
 ## Usage
 
 ```jsx
-import { useValue } from '@cheesebit/use-value';
+import { useValue } from '@welingtonms/use-value';
 
 function CollapseSample() {
-  const collapsed = useValue(false)
+  const collapsed = useValue(false);
 
   return (
     <div>
@@ -17,7 +16,7 @@ function CollapseSample() {
       <button
         type="button"
         onClick={() => {
-          collapsed(!collapsed())
+          collapsed(!collapsed());
         }}
       >
         Toggle like this
@@ -25,12 +24,12 @@ function CollapseSample() {
       <button
         type="button"
         onClick={() => {
-          collapsed(isCollapsed => !isCollapsed)
+          collapsed((isCollapsed) => !isCollapsed);
         }}
       >
         Or like this
       </button>
     </div>
-  )
+  );
 }
 ```
