@@ -1,3 +1,11 @@
+## [1.0.3](https://github.com/welingtonms/use-value/compare/v1.0.2...v1.0.3) (2022-06-20)
+
+
+### Bug Fixes
+
+* config improvements ([e8690cd](https://github.com/welingtonms/use-value/commit/e8690cd0871669ffe5ee9751beb34c143fdc9069))
+* set correct renderer version ([9d5bcd4](https://github.com/welingtonms/use-value/commit/9d5bcd4451d4ea3f1a799895773350223adced06))
+
 ## [1.0.2](https://github.com/cheesebit/use-value/compare/v1.0.1...v1.0.2) (2021-09-18)
 
 
