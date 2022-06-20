@@ -50,7 +50,7 @@
 		"chance": "1.1.8",
 		"jest": "28.1.1",
 		"prettier": "npm:wp-prettier@latest",
-		"react-test-renderer": "18.2.0",
+		"react-test-renderer": "17.0.2",
 		"react": "17.0.2",
 		"rollup-plugin-analyzer": "4.0.0",
 		"rollup-plugin-delete": "2.0.0",
